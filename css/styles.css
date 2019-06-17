@@ -10,6 +10,13 @@ body {
 .cabeza{
   padding-bottom: 20px;
 }
+.barra{
+  background: #a3d9d1;
+}
+.boton{
+  background: #a3d9d1;
+  border-color: #a3d9d1;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
