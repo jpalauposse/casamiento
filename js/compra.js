@@ -64,13 +64,19 @@ function borrar(id){
   td.innerHTML = `
   <td>Total</td>
   <td>$${cont}</td>
-  <td><button type="button" class="btn btn btn-success" onclick="">PAGAR</button> </td>
+  <td><button type="button" class="btn btn btn-success" onclick="pagar()">PAGAR</button> </td>
   `;
   td.id = 'total';
   template.appendChild(td);
+  pago = document.getElementById("pago");
+  if(pago !== null){
+    pago.parentNode.removeChild(pago);
+  }
 };
 
 function pagar(){
+pago = document.getElementById("pago");
+if(pago == null){
 var pantalla = document.getElementById("principal");
 var caja = document.createElement("div");
 caja.innerHTML = `
@@ -85,5 +91,6 @@ caja.innerHTML = `
   <h3>Enviar mail del comprabante a la direccion casados@conamor.com.ar</h3>
 `;
 caja.className = "container text-center";
+caja.id = "pago";
 pantalla.appendChild(caja);
-}
+};};

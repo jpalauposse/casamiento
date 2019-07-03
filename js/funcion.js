@@ -35,12 +35,15 @@ var seleccion = localStorage.getItem("comprado")
       seleccion[seleccion.length] = selecc;
       seleccion = JSON.stringify(seleccion);
       localStorage.setItem("comprado", seleccion);
+var changuito = document.getElementById("changuito");
+if(changuito == null){
 var carrito = document.getElementById("fab");
 var obj = document.createElement("a");
 obj.innerHTML = `
 <i class="fas fa-cart-arrow-down"></i>
 `;
 obj.href = "pages/carrito.html";
+obj.id = "changuito"
 carrito.appendChild(obj);
 
-};
+};};
