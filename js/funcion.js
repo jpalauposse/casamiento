@@ -43,7 +43,7 @@ obj.innerHTML = `
 <i class="fas fa-cart-arrow-down"></i>
 `;
 obj.href = "pages/carrito.html";
-obj.id = "changuito"
+obj.id = "changuito";
 carrito.appendChild(obj);
 
 };};
