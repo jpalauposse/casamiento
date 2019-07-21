@@ -42,7 +42,7 @@ var obj = document.createElement("a");
 obj.innerHTML = `
 <i class="fas fa-cart-arrow-down"></i>
 `;
-obj.href = "pages/carrito.html";
+obj.href = "carrito.php";
 obj.id = "changuito";
 carrito.appendChild(obj);
 
