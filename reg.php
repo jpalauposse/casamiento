@@ -20,7 +20,6 @@
 
 </main>
 <?php
-var_dump($_POST);
 //conexion con la base de datos y el servidor
 $link = mysqli_connect("localhost","id9582520_javier","431957","id9582520_regalos") or die("<h2>No se encuentra el servidor</h2>");
 //$db = mysqli_select_db("regalos",$link) or die("<h2>Error de Conexion</h2>");
@@ -50,9 +49,8 @@ if($_POST['exampleRadios'] === 'option1'){
   $item->unit_price = $_POST['monto'];
   $preference->items = array($item);
   $preference->save();
-};
-var_dump($preference);
-$preference->init_point;
+
+   ?><script>window.open('<?php echo $preference->init_point?>', 'target')</script>;<?php
 
 }else{
   echo'
