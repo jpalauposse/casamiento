@@ -20,7 +20,6 @@
 
 </main>
 <?php
-var_dump($_POST);
 //conexion con la base de datos y el servidor
 $link = mysqli_connect("localhost","id9582520_javier","431957","id9582520_regalos") or die("<h2>No se encuentra el servidor</h2>");
 //$db = mysqli_select_db("regalos",$link) or die("<h2>Error de Conexion</h2>");
@@ -39,13 +38,10 @@ mysqli_query($link,"INSERT INTO persona (Nombre, mail, dedicatoria, monto) VALUE
 if($_POST['exampleRadios'] === 'option1'){
   // SDK de Mercado Pago
   require __DIR__ .  '/vendor/autoload.php';
-
   // Agrega credenciales
   MercadoPago\SDK::setAccessToken('APP_USR-5470896262684941-072018-3098ef56a56e976dd382396e10266174-98450703');
-
   // Crea un objeto de preferencia
   $preference = new MercadoPago\Preference();
-
   // Crea un ítem en la preferencia
   $item = new MercadoPago\Item();
   $item->title = 'Regalo de Casamiento';
@@ -53,9 +49,9 @@ if($_POST['exampleRadios'] === 'option1'){
   $item->unit_price = $_POST['monto'];
   $preference->items = array($item);
   $preference->save();
-};
 
-$preference->init_point;
+   ?><script>window.open('<?php echo $preference->init_point?>', 'target')</script>;<?php
+
 }else{
   echo'
   <script>
