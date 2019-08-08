@@ -1,4 +1,4 @@
-var foto, titulo, precio;
+var foto, titulo, precio, alt;
 var regalos = [{
     foto: 'terre.jpeg',
     alt: 'Foto cinque terre',
