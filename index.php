@@ -3,10 +3,16 @@
   <?php include 'head.php' ?>
 <body>
   <?php include 'header.php'?>
-  <main role="main">
-    <div class="container marketing" id="marketing">
-    </div>
-  </main>
+  <div class="container-fluid marketing" id="">
+      <div class="row">
+        <div class="col-xl-2" id="izq">
+        </div>
+        <div class="col-xl-8" id="marketing">
+        </div>
+        <div class="col-xl-2" id="der">
+        </div>
+      </div>
+  </div>
   <?php include 'footer.php'?>
   <script>
     localStorage.setItem("comprado", "[]")
