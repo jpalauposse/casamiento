@@ -8,7 +8,7 @@
 </main>
 <?php
 //conexion con la base de datos y el servidor
-$link = mysqli_connect("localhost","id9582520_javier","431957","id9582520_regalos") or die("<h2>No se encuentra el servidor</h2>");
+$link = mysqli_connect("localhost","u497961469_javie","431957","u497961469_regal") or die("<h2>No se encuentra el servidor</h2>");
 //$db = mysqli_select_db("regalos",$link) or die("<h2>Error de Conexion</h2>");
 
 //obtenemos los valores del formulario
@@ -16,12 +16,15 @@ $Nombre = $_POST['nombre'];
 $mail = $_POST['mail'];
 $dedicatoria = $_POST['dedicatoria'];
 $monto = $_POST['monto'];
+$mediodepago = $_POST['exampleRadios'];
+$fecha = strftime( "%Y-%m-%d-%H-%M-%S", time() );
 
 //Obtiene la longitus de un string
 //$req = (strlen($Nombre)*strlen($mail)*strlen($dedicatoria)*strlen($monto)) or die("No se han llenado todos los //campos");
 
 //ingresamos la informacion a la base de datos
-mysqli_query($link,"INSERT INTO persona (Nombre, mail, dedicatoria, monto) VALUES('$Nombre','$mail','$dedicatoria','$monto')") or die("<h2>Error Guardando los datos</h2>");
+mysqli_query($link,"INSERT INTO persona (nombre, mail, dedicatoria, monto, mediodepago, fecha) VALUES('$Nombre','$mail','$dedicatoria','$monto','$mediodepago','$fecha')") or die("<h2>Error Guardando los datos</h2>");
+
 if($_POST['exampleRadios'] === 'option1'){
   // SDK de Mercado Pago
   require __DIR__ .  '/vendor/autoload.php';
@@ -33,11 +36,17 @@ if($_POST['exampleRadios'] === 'option1'){
   $item = new MercadoPago\Item();
   $item->title = 'Regalo de Casamiento';
   $item->quantity = 1;
+  $item->currency_id = "ARS";
   $item->unit_price = $_POST['monto'];
   $preference->items = array($item);
+  $preference->back_urls = array(
+    "success" => "https://pauyjavi.com.ar",
+    "failure" => "https://pauyjavi.com.ar",
+    "pending" => ""
+);
   $preference->save();
 
-   ?><script>window.open('<?php echo $preference->init_point?>', 'target')</script>;<?php
+   ?><script>window.open('<?php echo $preference->init_point?>', '_self')</script>;<?php
 
 }else{
   echo'
