@@ -29,4 +29,13 @@
   <!-- Custom styles for this template -->
   <link href="css/styles.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="fotos/ICON.png" />
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141660422-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-141660422-2');
+</script>
 </head>
