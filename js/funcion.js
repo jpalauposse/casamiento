@@ -6,7 +6,7 @@ function createList() {
     col.innerHTML =
       `
     <img class="bd-placeholder-img rounded-circle foto" width="140" height="140" src="fotos/${regalos[i].foto}" alt="${regalos[i].alt}">
-    <h2 id="descrip">${regalos[i].titulo}</h2>
+    <h4 id="descrip" class="descrip">${regalos[i].titulo}</h4>
     <p id="monto">$ ${regalos[i].precio}</p>
     <button class="btn btn-secondary boton" id="botonIng" role="button" onclick="seleccion(${i})">Comprar</button>
     <p></p>
