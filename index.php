@@ -3,7 +3,11 @@
   <?php include 'head.php' ?>
 <body>
   <?php include 'header.php'?>
+<<<<<<< HEAD
     <div class="container-fluid marketing" id="">
+=======
+  <div class="container-fluid marketing" id="">
+>>>>>>> 256a121534608c6bca90490df8027783b8d5b3e9
       <div class="row">
         <div class="col-xl-2" id="izq">
         </div>
@@ -12,8 +16,13 @@
         <div class="col-xl-2" id="der">
         </div>
       </div>
+<<<<<<< HEAD
     </div>
     <?php include 'footer.php'?>
+=======
+  </div>
+  <?php include 'footer.php'?>
+>>>>>>> 256a121534608c6bca90490df8027783b8d5b3e9
   <script>
     localStorage.setItem("comprado", "[]")
   </script>
