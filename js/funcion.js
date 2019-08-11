@@ -1,6 +1,13 @@
 function createList() {
-  var conteiner = document.getElementById("marketing");
-  var row = document.createElement('div');
+  var row = document.getElementById("marketing");
+  //var row = document.createElement('div');
+  var titulo= document.createElement('div');
+  titulo.innerHTML = `
+  <h2>Les compartimos nuestros deseos </br> de
+   experiencias y aventuras</h2>
+  `;
+  titulo.className="col-lg-12 titulo text-center"
+  row.appendChild(titulo);
   for (var i = 0; i < regalos.length; i++) {
     var col = document.createElement('div')
     col.innerHTML =
@@ -15,7 +22,7 @@ function createList() {
     row.appendChild(col);
   }
   conteiner.appendChild(row);
-  row.className = "row";
+  //row.className = "row";
 
 };
 createList();
