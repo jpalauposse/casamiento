@@ -4,16 +4,24 @@
 <body>
   <?php include 'header.php'?>
   <div class="container-fluid marketing" id="">
+    <div class="row" id="foto_pricipal">
+
+    </div>
       <div class="row">
         <div class="col-xl-2" id="izq">
         </div>
-        <div class="col-xl-8" id="marketing">
+        <div class="col-xl-8" >
+          <div class="row marke" id="marketing">
+
+          </div>
+          <div class="row footer">
+              <?php include 'footer.php'?>
+          </div>
         </div>
         <div class="col-xl-2" id="der">
         </div>
       </div>
   </div>
-  <?php include 'footer.php'?>
   <script>
     localStorage.setItem("comprado", "[]")
   </script>

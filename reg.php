@@ -3,9 +3,22 @@
 <?php include 'head.php' ?>
 <body>
 <?php include 'header.php';?>
-<main class="container" id='informacion'>
+<div class="container-fluid marketing" id="">
+    <div class="row">
+      <div class="col-xl-2" id="izq">
+      </div>
+      <div class="col-xl-8" >
+        <div class="row" id="informacion">
 
-</main>
+        </div>
+        <div class="row footer">
+            <?php include 'footer.php'?>
+        </div>
+      </div>
+      <div class="col-xl-2" id="der">
+      </div>
+    </div>
+</div>
 <?php
 //conexion con la base de datos y el servidor
 $link = mysqli_connect("localhost","u497961469_javie","431957","u497961469_regal") or die("<h2>No se encuentra el servidor</h2>");
@@ -49,32 +62,51 @@ if($_POST['exampleRadios'] === 'option1'){
    ?><script>window.open('<?php echo $preference->init_point?>', '_self')</script>;<?php
 
 }else{
-  echo'
+  ini_set( 'display_errors', 1 );
+   error_reporting( E_ALL );
+   $from = "noviosviajeros@pauyjavi.com.ar";
+   $subject = "Regalo para Pau y Javi";
+   $message = "<html>
+   <h2>Muchas gracias!</h2>
+   <h4> Se a registrado tu regalo! <br>Ultimo Paso</h4>
+   <h3>Depositar o transferir el monto $$monto a la cuenta</h3>
+   <h3> Banco: Santader RIO <br>
+     Cuenta: 514-354096/9<br>
+     Tipo de cuenta: Cuenta Unica en Pesos.<br>
+     Titular: Javier José Palau Posse<br>
+     CUIL: 23-35320817-9<br>
+     CBU: 0720514988000035409690<br>
+     Alias: NUEZ.SORTEO.ALBA </h3>
+   <h4>Enviar mail del comprabante a la direccion <a href:'mailto:noviosviajeros@pauyjavi.com.ar'>noviosviajeros@pauyjavi.com.ar</a></h4></html>";
+   $headers = "From:" . $from . "\r\n";
+   $headers .= 'MIME-Version: 1.0' . "\r\n";
+   $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+   mail($mail,$subject,$message, $headers);
+  echo"
   <script>
       var cont = localStorage.cont
-      var pantalla = document.getElementById("informacion");
-      var caja = document.createElement("div");
+      var pantalla = document.getElementById('informacion');
+      var caja = document.createElement('div');
         caja.innerHTML =
           `
-  <h2>Muchas gracias! </br> Se a registrado tu regalo! </br>Ultimo Paso!</h2>
-  <h3>Depositar o transferir el monto $${cont} a la cuenta</h3>
+  <h2 class='como_comprar'>Muchas gracias!</h2>
+  <h4 class='saludos'> Se ha registrado tu regalo! </br>Ultimo Paso</h4>
+  <h3>Depositar o transferir el monto $$monto a la cuenta</h3>
   <h3> Banco: Santader RIO </br>
-    Cuenta:</br>
-    Titular:</br>
-    DNI:</br>
-    CBU:</br>
-    Alias: </h3>
-  <h3>Enviar mail del comprabante a la direccion casados@conamor.com.ar</h3>
+    Cuenta: 514-354096/9</br>
+    Tipo de cuenta: Cuenta Única en Pesos.</br>
+    Titular: Javier José Palau Posse</br>
+    CUIL: 23-35320817-9</br>
+    CBU: 0720514988000035409690</br>
+    Alias: NUEZ.SORTEO.ALBA </h3>
+  <h3>Enviar mail del comprobante a la dirección <a href='mailto:noviosviajeros@pauyjavi.com'>noviosviajeros@pauyjavi.com.ar</a></h3>
   `;
-        caja.className = "container text-center";
-        caja.id = "pago";
+        caja.className = 'container text-center';
+        caja.id = 'pago';
         pantalla.appendChild(caja);
   </script>
-  ';
+  ";
 };
-?>
-<?php
-include 'footer.php';
 ?>
 <script src="js/listado.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

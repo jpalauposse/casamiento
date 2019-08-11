@@ -2,25 +2,25 @@ var foto, titulo, precio, alt;
 var regalos = [{
     foto: 'terre.jpeg',
     alt: 'Foto cinque terre',
-    titulo: 'Paseo en barco </br> por Cinque Terre',
+    titulo: 'Paseo en barco por Cinque Terre',
     precio: '500',
   },
   {
     foto: 'budapes.jpeg',
     alt: 'Foto Budapest',
-    titulo: 'Degustacion de cervezas </br> en Budapest',
+    titulo: 'Degustacion de cervezas en Budapest',
     precio: '1500',
   },
   {
     foto: 'portugal.jpeg',
     alt: 'Cuevas Benagil',
-    titulo: 'Aventura en kayak </br> en Cuevas Benagil',
+    titulo: 'Aventura en kayak en Cuevas Benagil',
     precio: '2000',
   },
   {
     foto: 'auto.jpeg',
     alt: 'Foto auto',
-    titulo: 'Viaje en Auto </br> por la Toscana',
+    titulo: 'Viaje en Auto por la Toscana',
     precio: '2500',
   },
   {
@@ -32,13 +32,13 @@ var regalos = [{
   {
     foto: 'jordania.jpeg',
     alt: 'Foto Jordania',
-    titulo: 'Viaje a </br> Jordania',
+    titulo: 'Viaje a Jordania',
     precio: '3500',
   },
   {
     foto: 'paris.jpeg',
     alt: 'Foto Paris',
-    titulo: 'Viaje a </br> Paris',
+    titulo: 'Cena en la Tour Eiffel',
     precio: '4000',
   },
   {
@@ -52,5 +52,47 @@ var regalos = [{
     alt: 'Foto playa',
     titulo: 'Playa',
     precio: '5000',
+  },
+  {
+    foto: 'otropais.jpeg',
+    alt: 'Foto otropais',
+    titulo: 'Otro Pais',
+    precio: '5500',
+  },
+  {
+    foto: 'chocolate.jpeg',
+    alt: 'Brujas',
+    titulo: 'Museo del chocolate en Brujas',
+    precio: '6000',
+  },
+  {
+    foto: 'amsterdam.jpeg',
+    alt: 'amsterdam',
+    titulo: 'Pase por los canales de Amsterdam',
+    precio: '6500',
+  },
+  {
+    foto: 'londres.jpeg',
+    alt: 'londres',
+    titulo: 'Opera en el coliceo de Londres',
+    precio: '7000',
+  },
+  {
+    foto:'portofino.jpeg',
+    alt: 'Portofino',
+    titulo: 'Estadia en Portofino',
+    precio:'7500',
+  },
+  {
+    foto:'sevilla.jpeg',
+    alt: 'Sevilla',
+    titulo: 'Tapas en Sevilla',
+    precio:'8000',
+  },
+  {
+    foto:'escocia.jpeg',
+    alt: 'Escocia',
+    titulo: 'Recorrido por los castillos de Escocia',
+    precio:'8500',
   },
 ];

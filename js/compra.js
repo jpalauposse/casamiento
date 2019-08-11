@@ -91,7 +91,7 @@ function datos(){
   <input name="nombre" class="form-control" type="text" placeholder="Nombre" required>
 </div>
 <div class="form-group">
-  <input name="mail" class="form-control" type="emailS" placeholder="Mail" required>
+  <input name="mail" class="form-control" type="email" placeholder="Mail" required>
 </div>
 <div class="form-group">
   <textarea name="dedicatoria" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deja tu saludo para los novios!"></textarea>
