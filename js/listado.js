@@ -77,4 +77,22 @@ var regalos = [{
     titulo: 'Opera en el coliceo de Londres',
     precio: '7000',
   },
+  {
+    foto:'portofino.jpeg',
+    alt: 'Portofino',
+    titulo: 'Estadia en Portofino',
+    precio:'7500',
+  },
+  {
+    foto:'sevilla.jpeg',
+    alt: 'Sevilla',
+    titulo: 'Tapas en Sevilla',
+    precio:'8000',
+  },
+  {
+    foto:'escocia.jpeg',
+    alt: 'Escocia',
+    titulo: 'Recorrido por los castillos de Escocia',
+    precio:'8500',
+  },
 ];

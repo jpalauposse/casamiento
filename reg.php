@@ -66,19 +66,21 @@ if($_POST['exampleRadios'] === 'option1'){
    error_reporting( E_ALL );
    $from = "noviosviajeros@pauyjavi.com.ar";
    $subject = "Regalo para Pau y Javi";
-   $message = "
+   $message = "<html>
    <h2>Muchas gracias!</h2>
-   <h4> Se ha registrado tu regalo! </br>Ultimo Paso</h4>
+   <h4> Se a registrado tu regalo! <br>Ultimo Paso</h4>
    <h3>Depositar o transferir el monto $$monto a la cuenta</h3>
-   <h3> Banco: Santader RIO </br>
-     Cuenta: 514-354096/9</br>
-     Tipo de cuenta: Cuenta Unica en Pesos.</br>
-     Titular: Javier José Palau Posse</br>
-     CUIL: 23-35320817-9</br>
-     CBU: 0720514988000035409690</br>
+   <h3> Banco: Santader RIO <br>
+     Cuenta: 514-354096/9<br>
+     Tipo de cuenta: Cuenta Unica en Pesos.<br>
+     Titular: Javier José Palau Posse<br>
+     CUIL: 23-35320817-9<br>
+     CBU: 0720514988000035409690<br>
      Alias: NUEZ.SORTEO.ALBA </h3>
-   <h4>Enviar mail del comprobante a la dirección noviosviajeros@pauyjavi.com.ar</h4>";
-   $headers = "From:" . $from;
+   <h4>Enviar mail del comprabante a la direccion <a href:'mailto:noviosviajeros@pauyjavi.com.ar'>noviosviajeros@pauyjavi.com.ar</a></h4></html>";
+   $headers = "From:" . $from . "\r\n";
+   $headers .= 'MIME-Version: 1.0' . "\r\n";
+   $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
    mail($mail,$subject,$message, $headers);
   echo'
   <script>
