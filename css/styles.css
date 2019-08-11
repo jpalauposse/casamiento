@@ -8,6 +8,7 @@ body {
   color: #5a5a5a;
   width: 100%;
   height: 100%;
+  padding-bottom: 0px;
   }
   .marketing{
     width: 100%;
@@ -15,23 +16,48 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
+  .marke{
+    padding-left: 40px;
+  }
   #izq{
     background-image: url("../fotos/izq.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: repeat-y;
   }
   #der{
     background-image: url("../fotos/der.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }  
-h2 {
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+#foto_pricipal{
+  height: 416px;
+  width: 100%;
+  background-image: url("../fotos/fotoprincipal.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+.titulo{
+  color: #a3d9d1;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 3rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom-style: solid;
+  border-color: #a3d9d1;
+  margin-bottom: 30px;
+}
+.descrip {
+  height: 46px;
   font-size: 1.2rem;
   font-weight: bold;
   font-family: 'Indie Flower', cursive;
 }
 .cabeza{
-  padding-bottom: 20px;
+  margin-bottom: 13px;
 }
 .barra{
   background: #a3d9d1;
@@ -50,7 +76,27 @@ h2 {
 .pago{
 margin-bottom: 30px;
 }
-
+.footer{
+  padding-top: 15px;
+}
+.preguntas{
+  padding-top: 50px;
+}
+.saludos{
+  color: #a3d9d1;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom-style: solid;
+  border-color: #a3d9d1;
+  margin
+}
+.como_comprar{
+  color: #a3d9d1;
+}
+.pf{
+  margin-bottom: 15px;
+  text-align: left;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
