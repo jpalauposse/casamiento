@@ -68,7 +68,13 @@ var regalos = [{
   {
     foto: 'amsterdam.jpeg',
     alt: 'amsterdam',
-    titulo: 'Casa de Ana Frank, Amsterdam',
+    titulo: 'Pase por los canales de Amsterdam',
     precio: '6500',
+  },
+  {
+    foto: 'londres.jpeg',
+    alt: 'londres',
+    titulo: 'Opera en el coliceo de Londres',
+    precio: '7000',
   },
 ];
