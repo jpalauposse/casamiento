@@ -41,7 +41,7 @@ body {
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
   font-size: 3rem;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 30px;
   border-bottom-style: solid;
   border-color: #a3d9d1;
@@ -54,7 +54,7 @@ body {
   font-family: 'Indie Flower', cursive;
 }
 .cabeza{
-  padding-bottom: 0px;
+  margin-bottom: 13px;
 }
 .barra{
   background: #a3d9d1;

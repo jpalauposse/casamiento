@@ -15,7 +15,7 @@
                 <img src="fotos/ICON.png" width="32" height="32" alt="Logo sitio" style="transform:rotate(90deg)">
               </div>
               <div class="col-11">
-                1) Elegir la opcion de regalo que les parezca mas divertida con el bonton . Pueden ser una o varias. </br> (clickeando en la opcion elegida se coloca automaticamente en el carrito)
+                1) Elegir la opcion de regalo que les parezca mas divertida con el bonton <img src="fotos/boton.jpg" width="80" alt="imagen del boton de compra"> . Pueden ser una o varias. </br> (clickeando en la opcion elegida se coloca automaticamente en el carrito)
               </div>
             </div>
             <div class="row pf">

@@ -3,9 +3,22 @@
 <?php include 'head.php' ?>
 <body>
 <?php include 'header.php';?>
-<main class="container" id='informacion'>
+<div class="container-fluid marketing" id="">
+    <div class="row">
+      <div class="col-xl-2" id="izq">
+      </div>
+      <div class="col-xl-8" >
+        <div class="row" id="informacion">
 
-</main>
+        </div>
+        <div class="row footer">
+            <?php include 'footer.php'?>
+        </div>
+      </div>
+      <div class="col-xl-2" id="der">
+      </div>
+    </div>
+</div>
 <?php
 //conexion con la base de datos y el servidor
 $link = mysqli_connect("localhost","u497961469_javie","431957","u497961469_regal") or die("<h2>No se encuentra el servidor</h2>");
@@ -56,7 +69,7 @@ if($_POST['exampleRadios'] === 'option1'){
       var caja = document.createElement("div");
         caja.innerHTML =
           `
-  <h2>Muchas gracias! </br> Se a registrado tu regalo! </br>Ultimo Paso!</h2>
+  <h2 class="como_comprar">Muchas gracias! </br> Se a registrado tu regalo! </br>Ultimo Paso!</h2>
   <h3>Depositar o transferir el monto $${cont} a la cuenta</h3>
   <h3> Banco: Santader RIO </br>
     Cuenta:</br>
@@ -72,9 +85,6 @@ if($_POST['exampleRadios'] === 'option1'){
   </script>
   ';
 };
-?>
-<?php
-include 'footer.php';
 ?>
 <script src="js/listado.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
