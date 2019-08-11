@@ -11,7 +11,7 @@
         <div class="col-xl-2" id="izq">
         </div>
         <div class="col-xl-8" >
-          <div class="row" id="marketing">
+          <div class="row marke" id="marketing">
 
           </div>
           <div class="row footer">

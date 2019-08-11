@@ -16,6 +16,9 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
+  .marke{
+    padding-left: 40px;
+  }
   #izq{
     background-image: url("../fotos/izq.jpg");
     background-size: cover;

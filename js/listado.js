@@ -65,4 +65,10 @@ var regalos = [{
     titulo: 'Museo del chocolate en Brujas',
     precio: '6000',
   },
+  {
+    foto: 'amsterdam.jpeg',
+    alt: 'amsterdam',
+    titulo: 'Casa de Ana Frank, Amsterdam',
+    precio: '6500',
+  },
 ];
