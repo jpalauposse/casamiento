@@ -82,15 +82,15 @@ if($_POST['exampleRadios'] === 'option1'){
    $headers .= 'MIME-Version: 1.0' . "\r\n";
    $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
    mail($mail,$subject,$message, $headers);
-  echo'
+  echo"
   <script>
       var cont = localStorage.cont
-      var pantalla = document.getElementById("informacion");
-      var caja = document.createElement("div");
+      var pantalla = document.getElementById('informacion');
+      var caja = document.createElement('div');
         caja.innerHTML =
           `
-  <h2 class="como_comprar">Muchas gracias!</h2>
-  <h4 class="saludos"> Se ha registrado tu regalo! </br>Ultimo Paso</h4>
+  <h2 class='como_comprar'>Muchas gracias!</h2>
+  <h4 class='saludos'> Se ha registrado tu regalo! </br>Ultimo Paso</h4>
   <h3>Depositar o transferir el monto $$monto a la cuenta</h3>
   <h3> Banco: Santader RIO </br>
     Cuenta: 514-354096/9</br>
@@ -99,13 +99,13 @@ if($_POST['exampleRadios'] === 'option1'){
     CUIL: 23-35320817-9</br>
     CBU: 0720514988000035409690</br>
     Alias: NUEZ.SORTEO.ALBA </h3>
-  <h3>Enviar mail del comprobante a la dirección <a href="mailto:noviosviajeros@pauyjavi.com">noviosviajeros@pauyjavi.com.ar</a></h3>
+  <h3>Enviar mail del comprobante a la dirección <a href='mailto:noviosviajeros@pauyjavi.com'>noviosviajeros@pauyjavi.com.ar</a></h3>
   `;
-        caja.className = "container text-center";
-        caja.id = "pago";
+        caja.className = 'container text-center';
+        caja.id = 'pago';
         pantalla.appendChild(caja);
   </script>
-  ';
+  ";
 };
 ?>
 <script src="js/listado.js"></script>
