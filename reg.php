@@ -62,6 +62,26 @@ if($_POST['exampleRadios'] === 'option1'){
    ?><script>window.open('<?php echo $preference->init_point?>', '_self')</script>;<?php
 
 }else{
+  ini_set( 'display_errors', 1 );
+   error_reporting( E_ALL );
+   $from = "noviosviajeros@pauyjavi.com.ar";
+   $to = $mail;
+   $subject = "Regalo para Pau y Javi";
+   $message = "
+   <h2>Muchas gracias!</h2>
+   <h4> Se a registrado tu regalo! </br>Ultimo Paso</h4>
+   <h3>Depositar o transferir el monto $${cont} a la cuenta</h3>
+   <h3> Banco: Santader RIO </br>
+     Cuenta: 514-354096/9</br>
+     Tipo de cuenta: Cuenta Unica en Pesos.</br>
+     Titular: Javier José Palau Posse</br>
+     CUIL: 23-35320817-9</br>
+     CBU: 0720514988000035409690</br>
+     Alias: NUEZ.SORTEO.ALBA </h3>
+   <h4>Enviar mail del comprabante a la direccion noviosviajeros@pauyjavi.com.ar</h4>";
+   $headers = "From:" . $from;
+   mail($to,$subject,$message, $headers);
+);
   echo'
   <script>
       var cont = localStorage.cont
@@ -69,15 +89,17 @@ if($_POST['exampleRadios'] === 'option1'){
       var caja = document.createElement("div");
         caja.innerHTML =
           `
-  <h2 class="como_comprar">Muchas gracias! </br> Se a registrado tu regalo! </br>Ultimo Paso!</h2>
+  <h2 class="como_comprar">Muchas gracias!</h2>
+  <h4 class="saludos"> Se a registrado tu regalo! </br>Ultimo Paso</h4>
   <h3>Depositar o transferir el monto $${cont} a la cuenta</h3>
   <h3> Banco: Santader RIO </br>
-    Cuenta:</br>
-    Titular:</br>
-    DNI:</br>
-    CBU:</br>
-    Alias: </h3>
-  <h3>Enviar mail del comprabante a la direccion casados@conamor.com.ar</h3>
+    Cuenta: 514-354096/9</br>
+    Tipo de cuenta: Cuenta Unica en Pesos.</br>
+    Titular: Javier José Palau Posse</br>
+    CUIL: 23-35320817-9</br>
+    CBU: 0720514988000035409690</br>
+    Alias: NUEZ.SORTEO.ALBA </h3>
+  <h3>Enviar mail del comprabante a la direccion noviosviajeros@pauyjavi.com.ar</h3>
   `;
         caja.className = "container text-center";
         caja.id = "pago";

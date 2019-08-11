@@ -53,4 +53,16 @@ var regalos = [{
     titulo: 'Playa',
     precio: '5000',
   },
+  {
+    foto: 'otropais.jpeg',
+    alt: 'Foto otropais',
+    titulo: 'Otro Pais',
+    precio: '5500',
+  },
+  {
+    foto: 'chocolate.jpeg',
+    alt: 'Brujas',
+    titulo: 'Museo del chocolate en Brujas',
+    precio: '6000',
+  },
 ];
