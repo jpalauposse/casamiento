@@ -15,7 +15,7 @@
                 <img src="fotos/ICON.png" width="32" height="32" alt="Logo sitio" style="transform:rotate(90deg)">
               </div>
               <div class="col-11">
-                1) Elegir la opción de regalo que les parezca más divertida con el bontón <img src="fotos/boton.jpg" width="80" alt="imagen del botón de compra"> . Pueden ser una o varias. </br> (clickeando en la opción elegida se coloca automáticamente en el carrito)
+                1) Elegir la opción de regalo que les parezca más divertida con el botón <img src="fotos/boton.jpg" width="80" alt="imagen del botón de compra"> . Puede ser una o varias. </br> (clickeando en la opción elegida se coloca automáticamente en el carrito)
               </div>
             </div>
             <div class="row pf">
@@ -31,7 +31,7 @@
                 <img src="fotos/ICON.png" width="32" height="32" alt="Logo sitio" style="transform:rotate(270deg)">
               </div>
               <div class="col-11">
-                3) El pago podrá realizarse por MercadoPago o por transferencia/Deposito. Allí podrán completar su nombre y mail. (¡Y nos encataría que también que agreguen sus saludos para los novios!)
+                3) El pago podrá realizarse por MercadoPago o por transferencia/Deposito. Deberán completar su nombre y mail. (¡Y nos encataría que también que agreguen sus saludos para los novios!)
               </div>
             </div>
             <div class="row pf">

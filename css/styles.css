@@ -19,6 +19,16 @@ body {
   .marke{
     padding-left: 40px;
   }
+  #izqui{
+    background-image: url("../fotos/izq.jpg");
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+  #derec{
+    background-image: url("../fotos/der.jpg");
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
   #izq{
     background-image: url("../fotos/izq.jpg");
     background-size: cover;
@@ -88,7 +98,6 @@ margin-bottom: 30px;
   padding-bottom: 20px;
   border-bottom-style: solid;
   border-color: #a3d9d1;
-  margin
 }
 .como_comprar{
   color: #a3d9d1;
@@ -96,6 +105,13 @@ margin-bottom: 30px;
 .pf{
   margin-bottom: 15px;
   text-align: left;
+}
+.datos{
+  font-size: 1.2rem;
+}
+.localizador{
+  color: #a3d9d1;
+  font-size: 2rem;
 }
 
 /* RESPONSIVE CSS

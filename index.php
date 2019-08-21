@@ -8,7 +8,7 @@
 
     </div>
       <div class="row">
-        <div class="col-xl-2" id="izq">
+        <div class="col-xl-2" id="izqui">
         </div>
         <div class="col-xl-8" >
           <div class="row marke" id="marketing">
@@ -18,7 +18,7 @@
               <?php include 'footer.php'?>
           </div>
         </div>
-        <div class="col-xl-2" id="der">
+        <div class="col-xl-2" id="derec">
         </div>
       </div>
   </div>
