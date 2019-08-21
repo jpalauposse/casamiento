@@ -18,7 +18,7 @@ function createList() {
     <button class="btn btn-secondary boton" id="botonIng" role="button" onclick="seleccion(${i})">Comprar</button>
     <p></p>
     `;
-    col.className = "col-lg-3 text-center";
+    col.className = "col-6 col-md-4 col-lg-3 col-xl-3 text-center";
     row.appendChild(col);
   }
   conteiner.appendChild(row);

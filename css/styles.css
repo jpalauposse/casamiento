@@ -16,9 +16,6 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
-  .marke{
-    padding-left: 40px;
-  }
   #izqui{
     background-image: url("../fotos/izq.jpg");
     background-size: contain;
@@ -117,21 +114,14 @@ margin-bottom: 30px;
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+@media (max-width: 767px) {
+  .descrip {
+    height: 70px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
   }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+  .pf iframe{
+    width:300px;
   }
 }
