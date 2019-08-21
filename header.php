@@ -15,6 +15,9 @@
         <li class="nav-item active">
           <a class="nav-link" href="pf.php">¿Como Comprar?<span class="sr-only">(current)</span></a>
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="maps.php">¿Como llegar?<span class="sr-only">(current)</span></a>
+        </li>
       </ul>
       <div id="fab">
       </div>
