@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-xl-2" id="izq">
       </div>
-      <div class="col-xl-8" >
+      <div class="col-xl-8 container text-center" >
         <div class="row" id="informacion">
 
         </div>
@@ -55,7 +55,7 @@ if($_POST['exampleRadios'] === 'option1'){
   $preference->back_urls = array(
     "success" => "https://pauyjavi.com.ar",
     "failure" => "https://pauyjavi.com.ar",
-    "pending" => ""
+    "pending" => "https://pauyjavi.com.ar"
 );
   $preference->save();
 
@@ -91,15 +91,15 @@ if($_POST['exampleRadios'] === 'option1'){
           `
   <h2 class='como_comprar'>Muchas gracias!</h2>
   <h4 class='saludos'> Se ha registrado tu regalo! </br>Ultimo Paso</h4>
-  <h3>Depositar o transferir el monto $$monto a la cuenta</h3>
-  <h3> Banco: Santader RIO </br>
+  <div class='datos'>Depositar o transferir el monto $$monto a la cuenta</div>
+  <div class='datos'>Banco: Santader RIO </br>
     Cuenta: 514-354096/9</br>
     Tipo de cuenta: Cuenta Única en Pesos.</br>
     Titular: Javier José Palau Posse</br>
     CUIL: 23-35320817-9</br>
     CBU: 0720514988000035409690</br>
-    Alias: NUEZ.SORTEO.ALBA </h3>
-  <h3>Enviar mail del comprobante a la dirección <a href='mailto:noviosviajeros@pauyjavi.com'>noviosviajeros@pauyjavi.com.ar</a></h3>
+    Alias: NUEZ.SORTEO.ALBA</div>
+  <div class='datos'>Enviar mail del comprobante a la dirección <a href='mailto:noviosviajeros@pauyjavi.com'>noviosviajeros@pauyjavi.com.ar</a></div>
   `;
         caja.className = 'container text-center';
         caja.id = 'pago';
