@@ -72,6 +72,12 @@ var regalos = [{
     precio: '5900',
   },
   {
+    foto: 'egipto.jpeg',
+    alt: 'egipto',
+    titulo: 'Travesía en camello, Egipto',
+    precio: '6500',
+  },
+  {
     foto: 'amsterdam.jpeg',
     alt: 'amsterdam',
     titulo: 'Paseo por los canales de Amsterdam',
@@ -108,9 +114,21 @@ var regalos = [{
     precio:'15000',
   },
   {
+    foto: 'austria.jpeg',
+    alt: 'Austria',
+    titulo: 'Excursión Cataratas Krimml, Austria',
+    precio: '18000',
+  },
+  {
     foto:'alpes.jpg',
     alt: 'Alpes',
     titulo: 'Pases de sky en los Alpes',
     precio:'23000',
+  },
+  {
+    foto: 'heli.jpeg',
+    alt: 'Helicoptero',
+    titulo: 'Avistaje de Glaciares en Helicoptero, Noruega',
+    precio: '32000',
   },
 ];
