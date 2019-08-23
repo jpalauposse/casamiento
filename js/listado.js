@@ -48,6 +48,12 @@ var regalos = [{
     precio: '3500',
   },
   {
+    foto: 'irlanda.jpeg',
+    alt: 'Irlanda',
+    titulo: 'Recorrida de bares irlandeses',
+    precio: '3900',
+  },
+  {
     foto: 'hotel.jpeg',
     alt: 'Foto pileta',
     titulo: 'Estadia en Hotel Blanco, Formentera',
@@ -130,5 +136,10 @@ var regalos = [{
     alt: 'Helicoptero',
     titulo: 'Avistaje de Glaciares en Helicoptero, Noruega',
     precio: '32000',
+  },{
+    foto: 'vuelo.jpeg',
+    alt: 'Vuelo a Londres',
+    titulo: 'Vuelo a Londres',
+    precio: '40000',
   },
 ];
