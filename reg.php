@@ -58,10 +58,24 @@ if($_POST['exampleRadios'] === 'option1'){
     "pending" => "https://pauyjavi.com.ar"
 );
   $preference->save();
+  //manda mail avisando del regalo.
+  ini_set( 'display_errors', 1 );
+   error_reporting( E_ALL );
+   $from = "noviosviajeros@pauyjavi.com.ar";
+   $subject = "Compra MercadoLibre";
+   $message = "<html>
+   <h2>$Nombre</h2>
+   <h4>$dedicatoria</h4>
+   <h3>$$monto</h3>";
+   $headers = "From:" . $from . "\r\n";
+   $headers .= 'MIME-Version: 1.0' . "\r\n";
+   $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+   mail($from,$subject,$message, $headers);
 
    ?><script>window.open('<?php echo $preference->init_point?>', '_self')</script>;<?php
 
 }else{
+  //manda mail al comprador con BCC al regalado.
   ini_set( 'display_errors', 1 );
    error_reporting( E_ALL );
    $from = "noviosviajeros@pauyjavi.com.ar";
@@ -79,6 +93,7 @@ if($_POST['exampleRadios'] === 'option1'){
      Alias: NUEZ.SORTEO.ALBA </h3>
    <h4>Enviar mail del comprabante a la direccion <a href:'mailto:noviosviajeros@pauyjavi.com.ar'>noviosviajeros@pauyjavi.com.ar</a></h4></html>";
    $headers = "From:" . $from . "\r\n";
+   $headers .= "Bcc:" . $from . "\r\n";
    $headers .= 'MIME-Version: 1.0' . "\r\n";
    $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
    mail($mail,$subject,$message, $headers);
